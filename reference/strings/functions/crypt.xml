@@ -152,7 +152,9 @@
     When validating passwords, a string comparison function that isn't
     vulnerable to timing attacks should be used to compare the output of
     <function>crypt</function> to the previously known hash. PHP
-    provides <function>hash_equals</function> for this purpose.
+    provides <function>hash_equals</function> for this purpose. One may also
+    use <function>password_verify</function> on hashes created by
+    <function>crypt</function>.
    </simpara>
   </warning>
  </refsect1>
